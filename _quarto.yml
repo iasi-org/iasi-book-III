@@ -16,11 +16,8 @@ lang: es
 book:
   title: "Ingeniería asistida por sistemas inteligentes"
   author: "Javier G. Grandez"
-  output-file: "iasi"
+  output-file: "iasi-book-III"
   
-  downloads:
-     - pdf
-
   announcement:
     dismissable: false
     content: "![](/resources/images/ants.png){.iasi-ants-image}"
@@ -39,7 +36,7 @@ filters:
 filter-options:
   plantuml:
     enabled: true
-    server: http://javier:1025
+    server: http://loclhost:10025
     cache: true
     styles:
       - resources/plantuml/iasi.puml
