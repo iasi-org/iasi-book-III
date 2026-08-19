@@ -1,3 +1,6 @@
 book:
   chapters:
     - "index.qmd"
+    - part: "chapters/10-inputs/index.qmd"
+      chapters:
+        - "chapters/10-inputs/01-inputs.qmd"
