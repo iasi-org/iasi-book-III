@@ -5,6 +5,4 @@ subtitle: "Volumen III · Del método a la metodología"
 
 # Del método a la metodología
 
-Este volumen forma parte de la colección IASI.
-
-Todavía no estamos trabajando en él.
+Este volumen desarrolla la metodología IASI como un proceso estructurado: una visión general y, a continuación, cada una de sus partes canónicas.

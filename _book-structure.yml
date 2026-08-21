@@ -1,6 +1,16 @@
 book:
   chapters:
     - "index.qmd"
+    - part: "chapters/00-general/index.qmd"
     - part: "chapters/10-inputs/index.qmd"
       chapters:
         - "chapters/10-inputs/01-inputs.qmd"
+    - part: "chapters/20-definitions/index.qmd"
+    - part: "chapters/30-configuration/index.qmd"
+    - part: "chapters/40-rules/index.qmd"
+    - part: "chapters/50-workflows/index.qmd"
+    - part: "chapters/60-skills/index.qmd"
+    - part: "chapters/70-templates/index.qmd"
+    - part: "chapters/80-validations/index.qmd"
+    - part: "chapters/90-automations/index.qmd"
+    - "903-licenses.qmd"

@@ -3,7 +3,7 @@ project:
 
   resources:
     - LICENSES/*.txt
-    
+
 profile:
   group:
     - [html, pdf]
@@ -17,12 +17,6 @@ book:
   title: "Ingeniería asistida por sistemas inteligentes"
   author: "Javier G. Grandez"
   output-file: "iasi-book-III"
-  
-  announcement:
-    dismissable: false
-    content: "![](/resources/images/ants.png){.iasi-ants-image}"
-    type: light
-    position: above-navbar
 
 copyright:
   holder: "Javier G. Grandez"
@@ -36,8 +30,7 @@ filters:
 filter-options:
   plantuml:
     enabled: true
-    server: http://loclhost:10025
+    server: http://localhost:10025
     cache: true
     styles:
       - resources/plantuml/iasi.puml
-      
