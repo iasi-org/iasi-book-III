@@ -146,11 +146,7 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 <script>
 
-const iasiEmbedded = window.self !== window.top;
-
-
-
-if (iasiEmbedded) {
+if (window.self !== window.top) {
 
   document.documentElement.classList.add("iasi-embedded");
 
@@ -158,17 +154,25 @@ if (iasiEmbedded) {
 
   document.addEventListener("DOMContentLoaded", function () {
 
+    const announcement = document.getElementById("quarto-announcement");
+
     const link = document.querySelector('a[href$="#iasi-open-external"]');
+
+
+
+    if (announcement) announcement.classList.add("iasi-hidden");
 
 
 
     if (link) {
 
-      link.href = window.location.href;
+      link.addEventListener("click", function (event) {
 
-      link.target = "_blank";
+        event.preventDefault();
 
-      link.rel = "noopener";
+        window.open(window.location.href, "_blank", "noopener");
+
+      });
 
     }
 
@@ -177,14 +181,6 @@ if (iasiEmbedded) {
 }
 
 </script>
-
-
-
-<div class="iasi-corporate-banner">
-
-  <img src="../../resources/images/ants.png" alt="IASI">
-
-</div>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">

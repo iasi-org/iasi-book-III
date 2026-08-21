@@ -160,11 +160,7 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 <script>
 
-const iasiEmbedded = window.self !== window.top;
-
-
-
-if (iasiEmbedded) {
+if (window.self !== window.top) {
 
   document.documentElement.classList.add("iasi-embedded");
 
@@ -172,17 +168,25 @@ if (iasiEmbedded) {
 
   document.addEventListener("DOMContentLoaded", function () {
 
+    const announcement = document.getElementById("quarto-announcement");
+
     const link = document.querySelector('a[href$="#iasi-open-external"]');
+
+
+
+    if (announcement) announcement.classList.add("iasi-hidden");
 
 
 
     if (link) {
 
-      link.href = window.location.href;
+      link.addEventListener("click", function (event) {
 
-      link.target = "_blank";
+        event.preventDefault();
 
-      link.rel = "noopener";
+        window.open(window.location.href, "_blank", "noopener");
+
+      });
 
     }
 
@@ -191,14 +195,6 @@ if (iasiEmbedded) {
 }
 
 </script>
-
-
-
-<div class="iasi-corporate-banner">
-
-  <img src="../../resources/images/ants.png" alt="IASI">
-
-</div>
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/10-inputs/index.html">Inputs</a></li><li class="breadcrumb-item"><a href="../../chapters/10-inputs/01-inputs.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Inputs: la información de entrada de IASI</span></a></li></ol></nav>
 <div class="quarto-title">
