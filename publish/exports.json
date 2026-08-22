@@ -1,6 +1,6 @@
 {
   "exports": [
-    {"profile": "pdf", "text": "PDF", "href": "../pdf/iasi-book-III.pdf"},
-    {"profile": "epub", "text": "eBook", "href": "../epub/iasi-book-III.epub"}
+    {"profile": "pdf", "text": "PDF", "icon": "file-earmark-pdf", "href": "../pdf/IASI Vol-III.pdf"},
+    {"profile": "epub", "text": "eBook", "icon": "book", "href": "../epub/iasi-book-III.epub"}
   ]
 }
