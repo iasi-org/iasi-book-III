@@ -50,7 +50,16 @@ async function setupExportsMenu() {
       link.dataset.originalHref = href;
 
       if (text) {
-        text.textContent = entry.text;
+        text.textContent = "";
+
+        if (entry.icon) {
+          const icon = document.createElement("i");
+          icon.className = `bi bi-${entry.icon} me-2`;
+          icon.setAttribute("aria-hidden", "true");
+          text.appendChild(icon);
+        }
+
+        text.appendChild(document.createTextNode(entry.text));
       }
 
       menu.insertBefore(newItem, markerItem);
