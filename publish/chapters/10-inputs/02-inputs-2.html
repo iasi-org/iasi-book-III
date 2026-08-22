@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/40-rules/index.html" rel="next">
-<link href="../../chapters/20-definitions/index.html" rel="prev">
+<link href="../../chapters/20-definitions/index.html" rel="next">
+<link href="../../chapters/10-inputs/01-inputs.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -122,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/30-configuration/index.html">Configuración</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/10-inputs/index.html">Inputs</a></li><li class="breadcrumb-item"><a href="../../chapters/10-inputs/02-inputs-2.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inputs: la información de entrada de IASI</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -148,11 +148,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../chapters/10-inputs/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inputs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/10-inputs/01-inputs.html" class="sidebar-item-text sidebar-link">
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/10-inputs/02-inputs-2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/10-inputs/02-inputs-2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inputs: la información de entrada de IASI</span></span></a>
   </div>
 </li>
@@ -210,15 +210,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#nombre-y-ubicación" id="toc-nombre-y-ubicación" class="nav-link active" data-scroll-target="#nombre-y-ubicación"><span class="header-section-number">3.1</span> Nombre y ubicación</a></li>
+  <li><a href="#external-inputs" id="toc-external-inputs" class="nav-link" data-scroll-target="#external-inputs"><span class="header-section-number">4</span> External inputs</a></li>
+  <li><a href="#internal-inputs" id="toc-internal-inputs" class="nav-link" data-scroll-target="#internal-inputs"><span class="header-section-number">5</span> Internal inputs</a></li>
+  <li><a href="#obtained-inputs" id="toc-obtained-inputs" class="nav-link" data-scroll-target="#obtained-inputs"><span class="header-section-number">6</span> Obtained inputs</a></li>
+  <li><a href="#diferentes-formatos-una-misma-frontera" id="toc-diferentes-formatos-una-misma-frontera" class="nav-link" data-scroll-target="#diferentes-formatos-una-misma-frontera"><span class="header-section-number">7</span> Diferentes formatos, una misma frontera</a></li>
+  <li><a href="#información-activa-e-histórica" id="toc-información-activa-e-histórica" class="nav-link" data-scroll-target="#información-activa-e-histórica"><span class="header-section-number">8</span> Información activa e histórica</a></li>
+  <li><a href="#los-inputs-no-son-la-solución" id="toc-los-inputs-no-son-la-solución" class="nav-link" data-scroll-target="#los-inputs-no-son-la-solución"><span class="header-section-number">9</span> Los inputs no son la solución</a></li>
+  <li><a href="#suficiencia-y-alcance" id="toc-suficiencia-y-alcance" class="nav-link" data-scroll-target="#suficiencia-y-alcance"><span class="header-section-number">10</span> Suficiencia y alcance</a></li>
+  <li><a href="#validación-antes-de-actuar" id="toc-validación-antes-de-actuar" class="nav-link" data-scroll-target="#validación-antes-de-actuar"><span class="header-section-number">11</span> Validación antes de actuar</a></li>
+  <li><a href="#de-inputs-a-definitions" id="toc-de-inputs-a-definitions" class="nav-link" data-scroll-target="#de-inputs-a-definitions"><span class="header-section-number">12</span> De inputs a definitions</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/10-inputs/index.html">Inputs</a></li><li class="breadcrumb-item"><a href="../../chapters/10-inputs/02-inputs-2.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inputs: la información de entrada de IASI</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Configuración</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inputs: la información de entrada de IASI</span></h1>
 </div>
 
 
@@ -235,8 +250,288 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Todo proyecto, proceso o actividad de ingeniería comienza con información.</p>
+<p>Nada nace de la nada.</p>
+<p>Antes de diseñar, decidir o construir existe algún tipo de información que provoca, condiciona o da sentido al trabajo. Puede ser un pliego, una presentación, una idea expresada en unas pocas líneas, una conversación, un correo, una especificación, un diagrama, una hoja de cálculo, código existente, una normativa, una incidencia, una URL o cualquier combinación de ellos.</p>
+<p>Esa información no tiene por qué llegar preparada para ser procesada.</p>
+<p>Puede aparecer en formatos diferentes, con distintos niveles de detalle y calidad. Puede estar estructurada o ser completamente informal; ser precisa o ambigua; estar completa o contener importantes lagunas; coincidir con otras fuentes o contradecirlas.</p>
+<p>IASI denomina <strong>inputs</strong> al conjunto de información que entra en el proceso y que puede ser utilizada para comprender el problema, establecer sus límites y determinar qué acciones pueden realizarse.</p>
+<p><code>inputs/</code> constituye, por tanto, <strong>la frontera de entrada del conocimiento en IASI</strong>.</p>
+<p>Su objetivo no es normalizar inmediatamente toda esa información ni obligarla a adoptar una forma común. Su función inicial es conservarla, clasificarla por su origen y ponerla a disposición del proceso manteniendo su significado y trazabilidad.</p>
+<p>La transformación vendrá después.</p>
+<pre class="text"><code>información heterogénea
+        ↓
+      inputs/
+        ↓
+ análisis · contraste · reconciliación
+        ↓
+ comprensión y normalización
+        ↓
+   definitions/</code></pre>
+<p>La separación es fundamental:</p>
+<blockquote class="blockquote">
+<p><strong><code>inputs/</code> conserva la información tal como entra, se aporta o se obtiene. <code>definitions/</code> representa esa información una vez comprendida y estructurada por IASI.</strong></p>
+</blockquote>
+<p>Los inputs son la materia prima.</p>
+<p>Las definitions son conocimiento ya formado para trabajar con él.</p>
+<section id="nombre-y-ubicación" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="nombre-y-ubicación"><span class="header-section-number">3.1</span> Nombre y ubicación</h2>
+<p><code>inputs</code> es el nombre utilizado y recomendado por IASI.</p>
+<p>Una implementación puede utilizar otro nombre físico cuando exista una razón para hacerlo. Lo importante no es la denominación concreta de la carpeta, sino conservar su semántica y su comportamiento.</p>
+<p>La estructura de referencia distingue tres orígenes:</p>
+<pre class="text"><code>inputs/
+├── externals/
+├── internals/
+└── obtained/</code></pre>
+<p>La clasificación no depende del formato, del contenido ni de la importancia de la información.</p>
+<p>Depende exclusivamente de <strong>su procedencia</strong>.</p>
+</section>
+<section id="external-inputs" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> External inputs</h1>
+<p><code>externals/</code> contiene la información recibida desde fuera del sistema de trabajo.</p>
+<p>Por ejemplo:</p>
+<ul>
+<li>un pliego;</li>
+<li>una petición de un cliente;</li>
+<li>una presentación;</li>
+<li>una especificación recibida;</li>
+<li>documentación de un proveedor;</li>
+<li>una normativa;</li>
+<li>requisitos contractuales;</li>
+<li>un correo;</li>
+<li>documentación de un sistema de terceros;</li>
+<li>cualquier otro material proporcionado como entrada al proyecto.</li>
+</ul>
+<p>Un input externo representa <strong>lo que realmente se recibió</strong>.</p>
+<p>Por esa razón existe una regla estricta:</p>
+<blockquote class="blockquote">
+<p><strong><code>inputs/externals/</code> es siempre de solo lectura para IASI.</strong></p>
+</blockquote>
+<p>IASI puede leer, analizar, relacionar, contrastar e interpretar un input externo.</p>
+<p>No puede modificarlo.</p>
+<p>No debe:</p>
+<ul>
+<li>corregirlo;</li>
+<li>reescribirlo;</li>
+<li>normalizarlo;</li>
+<li>completarlo;</li>
+<li>eliminar información;</li>
+<li>cambiar su formato para adaptarlo al proceso;</li>
+<li>sustituir silenciosamente una versión por otra.</li>
+</ul>
+<p>Si un pliego contiene un error, ese error forma parte del input recibido.</p>
+<p>Si una presentación es ambigua, la ambigüedad debe conservarse.</p>
+<p>Si dos documentos externos se contradicen, ambos deben permanecer intactos para que la contradicción pueda ser detectada, analizada y resuelta posteriormente.</p>
+<blockquote class="blockquote">
+<p><strong>Lo externo representa lo que recibimos, no lo que hubiéramos querido recibir.</strong></p>
+</blockquote>
+<p>Cualquier corrección, interpretación o normalización debe producir <strong>nueva información en otro lugar</strong>.</p>
+<p>Nunca debe alterar la evidencia original.</p>
+<p>Si posteriormente llega una nueva versión de un documento externo, se incorpora como un nuevo input. La versión anterior se conserva mientras sea necesaria para mantener la trazabilidad del proceso.</p>
+</section>
+<section id="internal-inputs" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Internal inputs</h1>
+<p><code>internals/</code> contiene información aportada desde dentro del proceso de ingeniería.</p>
+<p>Puede proceder del usuario, del equipo, de una decisión tomada durante el trabajo o de cualquier intervención interna que añada, restrinja o modifique el contexto disponible.</p>
+<p>Por ejemplo:</p>
+<pre class="text"><code>Por ahora únicamente crea el proyecto.</code></pre>
+<p>Un input interno puede:</p>
+<ul>
+<li>añadir información;</li>
+<li>aclarar una petición anterior;</li>
+<li>establecer prioridades;</li>
+<li>introducir restricciones;</li>
+<li>delimitar el alcance;</li>
+<li>cambiar una decisión;</li>
+<li>indicar qué debe hacerse a continuación;</li>
+<li>indicar qué todavía no debe hacerse.</li>
+</ul>
+<p>El nuevo input no modifica retroactivamente los anteriores.</p>
+<p>Añade nueva información al proceso.</p>
+<p>Esto permite conservar cómo evoluciona realmente el conocimiento y las decisiones durante un proyecto.</p>
+</section>
+<section id="obtained-inputs" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Obtained inputs</h1>
+<p>No toda la información necesaria es proporcionada explícitamente.</p>
+<p>Parte de ella se descubre trabajando.</p>
+<p><code>obtained/</code> contiene información obtenida mediante actividades como:</p>
+<ul>
+<li>observación;</li>
+<li>análisis;</li>
+<li>inspección;</li>
+<li>exploración;</li>
+<li>ejecución;</li>
+<li>análisis de código;</li>
+<li>análisis de configuración;</li>
+<li>ingeniería inversa;</li>
+<li>pruebas;</li>
+<li>mediciones;</li>
+<li>consultas a sistemas existentes.</li>
+</ul>
+<p>Por ejemplo, la documentación recibida puede no indicar qué versión de una biblioteca utiliza un sistema.</p>
+<p>Si durante el análisis del repositorio IASI descubre esa versión, esa información no es externa y tampoco ha sido aportada mediante una decisión interna.</p>
+<p>Es información <strong>obtenida</strong>.</p>
+<p>Esta categoría permite distinguir con claridad:</p>
+<pre class="text"><code>lo que nos dijeron
+lo que decidimos
+lo que descubrimos</code></pre>
+<p>Esa diferencia puede ser esencial para la trazabilidad y para evaluar posteriormente la fiabilidad de una conclusión.</p>
+</section>
+<section id="diferentes-formatos-una-misma-frontera" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Diferentes formatos, una misma frontera</h1>
+<p>Los inputs no tienen que adoptar un formato documental único.</p>
+<p>Un proyecto puede comenzar con:</p>
+<pre class="text"><code>inputs/
+├── externals/
+│   ├── presentation.pdf
+│   ├── requirements.xlsx
+│   ├── architecture.png
+│   ├── contract.pdf
+│   └── email.md
+├── internals/
+│   └── 001-initial-scope.md
+└── obtained/
+    └── 001-existing-runtime.md</code></pre>
+<p>IASI debe aceptar que la realidad es heterogénea.</p>
+<p>Forzar la normalización antes de incorporar la información produciría un problema importante: dejaríamos de conservar la entrada original y comenzaríamos a confundir <strong>evidencia</strong> con <strong>interpretación</strong>.</p>
+<p>Por eso ambos niveles deben permanecer separados.</p>
+<pre class="text"><code>INPUT
+"esto es lo que tenemos"
+        ↓
+ANÁLISIS
+"esto es lo que entendemos"
+        ↓
+DEFINITION
+"esto es lo que podemos utilizar"</code></pre>
+</section>
+<section id="información-activa-e-histórica" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Información activa e histórica</h1>
+<p>La información puede dejar de estar vigente sin dejar de ser relevante para la historia del proyecto.</p>
+<p>Cada origen puede disponer de un espacio para información archivada:</p>
+<pre class="text"><code>inputs/
+├── externals/
+│   └── archived/
+├── internals/
+│   └── archived/
+└── obtained/
+    └── archived/</code></pre>
+<p>Archivar un input no cambia su naturaleza.</p>
+<p>Un external archivado continúa siendo external.</p>
+<p>Un internal archivado continúa siendo internal.</p>
+<p>Un obtained archivado continúa siendo obtained.</p>
+<p>Archivar significa únicamente que esa entrada ya no participa en la interpretación del estado vigente.</p>
+<p>Los procesos que calculen el contexto activo deben ignorar el contenido archivado.</p>
+<p>Su conservación permite reconstruir posteriormente cómo evolucionó la información disponible.</p>
+</section>
+<section id="los-inputs-no-son-la-solución" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Los inputs no son la solución</h1>
+<p>Recibir información no significa disponer de información suficiente para construir una solución.</p>
+<p>Por ejemplo:</p>
+<pre class="text"><code>Queremos hacer un filtro y un MCP que genere gráficos.</code></pre>
+<p>Ese input expresa una intención.</p>
+<p>Pero puede ser insuficiente para decidir:</p>
+<ul>
+<li>qué gráficos deben generarse;</li>
+<li>qué recibe el sistema como entrada;</li>
+<li>qué produce;</li>
+<li>cuál es la responsabilidad del filtro;</li>
+<li>cuál es la responsabilidad del MCP;</li>
+<li>qué tecnologías deben utilizarse;</li>
+<li>qué restricciones existen;</li>
+<li>cómo debe validarse el resultado.</li>
+</ul>
+<p>IASI no debe completar silenciosamente esos huecos mediante suposiciones.</p>
+<p>Debe ser capaz de distinguir entre:</p>
+<pre class="text"><code>lo conocido
+lo inferido
+lo desconocido</code></pre>
+<p>y determinar qué puede hacerse legítimamente con la información disponible.</p>
+</section>
+<section id="suficiencia-y-alcance" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Suficiencia y alcance</h1>
+<p>La información no necesita estar completa para que el trabajo pueda comenzar.</p>
+<p>Necesita ser <strong>suficiente para la acción concreta que se pretende realizar</strong>.</p>
+<p>Esta distinción es esencial.</p>
+<p>El input:</p>
+<pre class="text"><code>Queremos hacer un filtro y un MCP que genere gráficos.</code></pre>
+<p>puede ser insuficiente para diseñar e implementar el sistema.</p>
+<p>Sin embargo, posteriormente puede recibirse:</p>
+<pre class="text"><code>Por ahora únicamente crea el proyecto.</code></pre>
+<p>Este nuevo input no resuelve las incógnitas de la solución.</p>
+<p>Lo que hace es <strong>reducir explícitamente el alcance de la acción</strong>.</p>
+<p>IASI sigue sin saber lo suficiente para construir el sistema completo, pero sí puede disponer de información suficiente para crear el proyecto inicial.</p>
+<p>Por tanto:</p>
+<blockquote class="blockquote">
+<p><strong>La falta de información limita el alcance; no necesariamente detiene el proceso.</strong></p>
+</blockquote>
+<p>Y, de forma más precisa:</p>
+<blockquote class="blockquote">
+<p><strong>Si no sabemos lo suficiente para realizar una acción, no la realizamos. Podemos avanzar únicamente hasta donde la información disponible y los límites establecidos lo permitan.</strong></p>
+</blockquote>
+<p>Esto permite que IASI avance de forma incremental sin inventar información y sin exigir tampoco una definición completa del proyecto antes de realizar cualquier trabajo.</p>
+</section>
+<section id="validación-antes-de-actuar" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Validación antes de actuar</h1>
+<p>Antes de ejecutar una acción, IASI debe evaluar el conjunto de inputs activos.</p>
+<p>Entre otras cuestiones, debe determinar:</p>
+<ul>
+<li>qué información está disponible;</li>
+<li>cuál es su origen;</li>
+<li>qué información sigue vigente;</li>
+<li>si existen contradicciones;</li>
+<li>si existen ambigüedades relevantes;</li>
+<li>qué información falta;</li>
+<li>qué puede inferirse razonablemente;</li>
+<li>qué no puede afirmarse;</li>
+<li>si la información disponible es suficiente para la acción propuesta;</li>
+<li>hasta dónde permite avanzar el alcance establecido.</li>
+</ul>
+<p>El objetivo no es conseguir que IASI siempre produzca una acción.</p>
+<p>A veces el resultado correcto del análisis será:</p>
+<pre class="text"><code>no existe información suficiente para realizar esta acción</code></pre>
+<p>En otras ocasiones podrá concluir:</p>
+<pre class="text"><code>no puedo implementar la solución,
+pero sí puedo realizar esta parte concreta</code></pre>
+<p>Ambos resultados representan comportamiento correcto.</p>
+</section>
+<section id="de-inputs-a-definitions" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> De inputs a definitions</h1>
+<p>Los inputs no deben ser utilizados como sustituto permanente de una representación estructurada del proyecto.</p>
+<p>IASI debe analizarlos, relacionarlos, contrastarlos y reconciliarlos.</p>
+<p>De ese proceso nacen las <code>definitions</code>.</p>
+<pre class="text"><code>                 inputs
+                    │
+        ┌───────────┼───────────┐
+        │           │           │
+   externals    internals    obtained
+        │           │           │
+        └───────────┼───────────┘
+                    │
+                    ▼
+            análisis conjunto
+                    │
+          contradicciones
+          huecos
+          relaciones
+          decisiones
+                    │
+                    ▼
+               definitions</code></pre>
+<p>La relación no es necesariamente uno a uno.</p>
+<p>Un único input puede contribuir a varias definitions.</p>
+<p>Una definition puede construirse a partir de numerosos inputs.</p>
+<p>Un input puede incluso no producir ninguna definition si resulta irrelevante, está superado o únicamente sirve como evidencia histórica.</p>
+<p>IASI debe conservar siempre la diferencia entre ambos niveles:</p>
+<blockquote class="blockquote">
+<p><strong>Inputs responden a: “¿de dónde sale lo que sabemos?”</strong></p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>Definitions responden a: “¿qué hemos entendido y estructurado para poder trabajar?”</strong></p>
+</blockquote>
+<p>Mantener esa frontera permite que el conocimiento evolucione sin destruir sus fuentes y proporciona una base sólida para la trazabilidad, la validación y la reproducibilidad del proceso de ingeniería.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -641,13 +936,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/20-definitions/index.html" class="pagination-link" aria-label="Definitions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Definitions</span>
+      <a href="../../chapters/10-inputs/01-inputs.html" class="pagination-link" aria-label="Inputs: la información de entrada de IASI">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Inputs: la información de entrada de IASI</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/40-rules/index.html" class="pagination-link" aria-label="Reglas y convenciones">
-        <span class="nav-page-text">Reglas y convenciones</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/20-definitions/index.html" class="pagination-link" aria-label="Definitions">
+        <span class="nav-page-text">Definitions</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

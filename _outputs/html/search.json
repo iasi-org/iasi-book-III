@@ -32,6 +32,28 @@
     ]
   },
   {
+    "objectID": "chapters/10-inputs/02-inputs-2.html",
+    "href": "chapters/10-inputs/02-inputs-2.html",
+    "title": "3  Inputs: la información de entrada de IASI",
+    "section": "",
+    "text": "3.1 Nombre y ubicación\nTodo proyecto, proceso o actividad de ingeniería comienza con información.\nNada nace de la nada.\nAntes de diseñar, decidir o construir existe algún tipo de información que provoca, condiciona o da sentido al trabajo. Puede ser un pliego, una presentación, una idea expresada en unas pocas líneas, una conversación, un correo, una especificación, un diagrama, una hoja de cálculo, código existente, una normativa, una incidencia, una URL o cualquier combinación de ellos.\nEsa información no tiene por qué llegar preparada para ser procesada.\nPuede aparecer en formatos diferentes, con distintos niveles de detalle y calidad. Puede estar estructurada o ser completamente informal; ser precisa o ambigua; estar completa o contener importantes lagunas; coincidir con otras fuentes o contradecirlas.\nIASI denomina inputs al conjunto de información que entra en el proceso y que puede ser utilizada para comprender el problema, establecer sus límites y determinar qué acciones pueden realizarse.\ninputs/ constituye, por tanto, la frontera de entrada del conocimiento en IASI.\nSu objetivo no es normalizar inmediatamente toda esa información ni obligarla a adoptar una forma común. Su función inicial es conservarla, clasificarla por su origen y ponerla a disposición del proceso manteniendo su significado y trazabilidad.\nLa transformación vendrá después.\nLa separación es fundamental:\nLos inputs son la materia prima.\nLas definitions son conocimiento ya formado para trabajar con él.\ninputs es el nombre utilizado y recomendado por IASI.\nUna implementación puede utilizar otro nombre físico cuando exista una razón para hacerlo. Lo importante no es la denominación concreta de la carpeta, sino conservar su semántica y su comportamiento.\nLa estructura de referencia distingue tres orígenes:\nLa clasificación no depende del formato, del contenido ni de la importancia de la información.\nDepende exclusivamente de su procedencia.",
+    "crumbs": [
+      "Inputs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Inputs: la información de entrada de IASI</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/10-inputs/02-inputs-2.html#nombre-y-ubicación",
+    "href": "chapters/10-inputs/02-inputs-2.html#nombre-y-ubicación",
+    "title": "3  Inputs: la información de entrada de IASI",
+    "section": "",
+    "text": "inputs/\n├── externals/\n├── internals/\n└── obtained/",
+    "crumbs": [
+      "Inputs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Inputs: la información de entrada de IASI</span>"
+    ]
+  },
+  {
     "objectID": "903-licenses.html",
     "href": "903-licenses.html",
     "title": "Licencias",

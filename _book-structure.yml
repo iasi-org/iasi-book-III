@@ -5,6 +5,7 @@ book:
     - part: "chapters/10-inputs/index.qmd"
       chapters:
         - "chapters/10-inputs/01-inputs.qmd"
+        - "chapters/10-inputs/02-inputs-2.qmd"
     - part: "chapters/20-definitions/index.qmd"
     - part: "chapters/30-configuration/index.qmd"
     - part: "chapters/40-rules/index.qmd"
