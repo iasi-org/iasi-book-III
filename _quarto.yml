@@ -14,7 +14,7 @@ metadata-files:
 lang: es
 
 book:
-  title: "Ingeniería asistida por sistemas inteligentes"
+  title: "Ingeniería aumentada por sistemas inteligentes"
   author: "Javier G. Grandez"
   output-file: "iasi-book-III"
 
