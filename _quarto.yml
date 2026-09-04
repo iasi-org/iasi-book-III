@@ -26,11 +26,12 @@ license: "CC BY"
 
 filters:
   - iasi-plantuml
-
+  - resources/lua/iasi-js.lua
+  
 filter-options:
   plantuml:
     enabled: true
-    server: http://localhost:10025
+    server: http://iasi-docker:10025
     cache: true
     styles:
       - resources/plantuml/iasi.puml

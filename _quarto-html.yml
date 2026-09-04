@@ -86,8 +86,6 @@ format:
   html:
     pagetitle: "IASI Vol. III"
     title-prefix: ""
-    include-in-header:
-      text: '<script src="resources/js/iasi.js"></script>'
     theme:
       - cosmo
       - resources/css/iasi.scss
