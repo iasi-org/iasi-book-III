@@ -1,0 +1,30 @@
+---
+title: "La metodología"
+navbar-title: "Metodología"
+---
+
+La metodología IASI organiza el paso desde información heterogénea hasta resultados aceptados.
+
+Su secuencia canónica puede representarse así:
+
+```text
+inputs
+   ↓
+definitions
+   ↓
+rules + configuration
+   ↓
+specifications
+   ↓
+tasks
+   ↓
+validations
+   ↓
+acceptance + states
+```
+
+Esta representación no describe una cascada irreversible.
+
+El proceso es iterativo. Una task puede descubrir nueva información; una validation puede revelar que una definition era incompleta; un nuevo input puede afectar specifications ya existentes. IASI conserva esas relaciones para poder volver atrás sin perder la historia.
+
+Los capítulos de esta parte describen cada elemento por su responsabilidad dentro del ciclo.

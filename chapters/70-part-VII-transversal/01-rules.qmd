@@ -1,0 +1,50 @@
+---
+title: "Rules"
+navbar-title: "Rules"
+---
+
+Una rule materializa una norma reutilizable.
+
+Su estructura normalizada puede expresarse en Markdown mediante:
+
+```text
+# <Rule name>
+
+## Metadata
+## Rule
+## Examples
+## Exceptions
+## Rationale
+## Sources
+```
+
+`Examples` es opcional. Puede contener casos positivos, negativos o situaciones límite cuando ayuden a comprender la norma.
+
+## Nivel normativo
+
+La metadata puede distinguir niveles como:
+
+```text
+must
+must-not
+should
+should-not
+may
+```
+
+Esto evita expresar con el mismo peso una obligación y una recomendación.
+
+## Especificidad
+
+Cuando una rule específica y otra genérica regulan el mismo aspecto, IASI puede aplicar la más específica.
+
+Por ejemplo:
+
+```text
+coding/styles/generic/*
+coding/styles/python/*
+```
+
+Para código Python, la regla específica del lenguaje prevalece cuando ambas entran en conflicto sobre el mismo asunto.
+
+La especificidad permite reutilizar principios generales sin impedir que un dominio introduzca sus propias restricciones.

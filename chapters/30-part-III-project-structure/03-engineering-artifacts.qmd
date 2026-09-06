@@ -1,0 +1,44 @@
+---
+title: "Artefactos de ingeniería"
+navbar-title: "Artefactos"
+---
+
+Después de la frontera de inputs aparecen los directorios que materializan el proceso de ingeniería:
+
+```text
+definitions/
+rules/
+configuration/
+specifications/
+tasks/
+validations/
+states/
+```
+
+No forman una colección arbitraria.
+
+Cada uno responde a una pregunta distinta:
+
+| Directorio | Pregunta |
+|---|---|
+| `definitions/` | ¿qué hemos comprendido? |
+| `rules/` | ¿qué normas debemos respetar? |
+| `configuration/` | ¿con qué parámetros trabajamos? |
+| `specifications/` | ¿qué debe quedar satisfecho? |
+| `tasks/` | ¿qué trabajo concreto ejecutamos? |
+| `validations/` | ¿qué evidencia comprueba el resultado? |
+| `states/` | ¿cuál es el estado materializado? |
+
+La metodología puede añadir especialización interna dentro de cada uno.
+
+Por ejemplo, las rules pueden organizarse por dominio, tecnología o lenguaje. Esa organización no cambia su naturaleza normativa.
+
+## No confundir estructura con secuencia
+
+Que estos directorios puedan representarse en un flujo no significa que únicamente puedan escribirse en ese orden.
+
+Una validación puede descubrir información que produzca un nuevo input obtenido. Una modificación de configuration puede afectar specifications existentes. Un cambio de rule puede invalidar trabajo previamente aceptado.
+
+La estructura conserva responsabilidades.
+
+El workflow decide cómo se recorren.

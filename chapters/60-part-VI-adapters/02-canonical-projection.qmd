@@ -1,0 +1,27 @@
+---
+title: "Canónico y derivado"
+navbar-title: "Canónico y derivado"
+---
+
+La distinción principal es:
+
+```text
+.iasi/      → canónico dentro del proyecto
+.codex/     → proyección derivada
+.copilot/   → proyección derivada
+...
+```
+
+Los nombres concretos de los directorios derivados pueden configurarse, pero su naturaleza no cambia.
+
+Un archivo generado para un agente no debe adquirir autoridad simplemente porque ese agente lo consume directamente.
+
+Si existe una discrepancia entre la representación derivada y la fuente canónica, debe corregirse la fuente o el adapter y volver a materializarse.
+
+Modificar únicamente la proyección crea una bifurcación invisible.
+
+## Regenerabilidad
+
+Una buena proyección debe poder reconstruirse.
+
+Eso convierte los directorios de adapter en resultados controlados, no en nuevos centros de conocimiento.

@@ -1,0 +1,28 @@
+---
+title: "Validación y aceptación"
+navbar-title: "Validar y aceptar"
+---
+
+El workflow de validación comienza cuando existe un resultado que debe contrastarse con una condición.
+
+```text
+resultado
+   ↓
+validations aplicables
+   ↓
+evidencia
+   ├── fail → revisar / corregir
+   └── pass → candidato a aceptación
+                    ↓
+                 aceptar
+                    ↓
+                  state
+```
+
+El paso de `pass` a aceptación no debe confundirse con una operación puramente mecánica.
+
+Hay contextos en los que la aceptación puede automatizarse porque los criterios son completamente objetivos y la autoridad ha sido delegada de forma explícita.
+
+En otros, requiere decisión humana.
+
+IASI debe permitir ambos casos sin ocultar quién o qué tenía autoridad para efectuar la transición.

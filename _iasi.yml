@@ -1,6 +1,18 @@
 type: book
 
 publication:
-  strategy: structured
+  strategy: parted
   content-dir: chapters
+  front-matter: front-matter
+  back-matter: back-matter
   numbered: true
+
+paths:
+  inputs: inputs
+  orchestration: orchestration
+  outputs: outputs
+  releases: releases
+
+exclude:
+  - includes
+  - legacy

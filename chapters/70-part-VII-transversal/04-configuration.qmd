@@ -1,0 +1,28 @@
+---
+title: "Configuration"
+navbar-title: "Configuration"
+---
+
+La configuration reúne parámetros que modifican el comportamiento del proceso sin redefinir su metodología.
+
+Puede fijar:
+
+- versiones;
+- rutas;
+- nombres físicos;
+- opciones de herramientas;
+- valores por defecto;
+- capacidades habilitadas;
+- otras decisiones parametrizables.
+
+Una configuración importante debe ser persistente y revisable.
+
+## Estabilidad tecnológica
+
+Durante un proyecto, las tecnologías críticas deberían mantenerse fijadas salvo que exista una necesidad justificada para cambiarlas.
+
+Que aparezca una versión más reciente no convierte automáticamente la actualización en una buena decisión.
+
+Un cambio de versión puede afectar compatibilidad, arquitectura, dependencias, pruebas, despliegue o certificaciones.
+
+La configuration permite que esa decisión sea explícita en lugar de depender del entorno accidental de quien ejecuta el trabajo.

@@ -1,0 +1,32 @@
+---
+title: "adapter"
+navbar-title: "adapter"
+---
+
+El command canónico para materializar la integración con un agente adopta la forma:
+
+```text
+adapter(agent, dir=".<agent>", overwrite=false)
+```
+
+Por ejemplo:
+
+```text
+adapter(agent="codex", dir=".codex", overwrite=false)
+```
+
+El command selecciona un adapter conocido y proyecta sus artefactos sobre el directorio de destino.
+
+## `overwrite`
+
+Por defecto, la materialización no debe destruir silenciosamente contenido existente.
+
+`overwrite=false` obliga a tratar una colisión como una condición explícita.
+
+## Responsabilidad
+
+`adapter` no cambia la metodología.
+
+Materializa una representación compatible con un entorno concreto a partir de información canónica de IASI.
+
+Por eso el resultado del adapter es **derivado** y puede regenerarse.

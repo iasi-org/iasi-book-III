@@ -1,0 +1,26 @@
+---
+title: "Templates"
+navbar-title: "Templates"
+---
+
+Los templates proporcionan formas canónicas para artefactos repetibles.
+
+Una plantilla no debería obligar a rellenar contenido inexistente.
+
+Su función es estabilizar estructura, metadata y convenciones allí donde esa estabilidad aporta valor.
+
+Por ejemplo, una plantilla de rule puede garantizar que todas las rules expresen de la misma forma su ámbito, nivel normativo, excepciones y fuentes.
+
+## Plantilla y semántica
+
+La plantilla determina la forma esperada.
+
+No decide el contenido.
+
+Un Sistema Inteligente puede utilizarla para materializar un nuevo artefacto, pero sigue necesitando inputs y autoridad suficientes para completar cada sección.
+
+## Templates incorporados
+
+IASI puede distribuir templates de fábrica dentro de su contenido `builtin/`.
+
+Un proyecto puede reutilizarlos o especializarlos sin convertir una copia modificada en una excepción oculta del runtime.

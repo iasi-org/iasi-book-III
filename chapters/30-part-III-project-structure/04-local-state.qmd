@@ -1,0 +1,32 @@
+---
+title: "Estado local de IASI"
+navbar-title: "Estado local"
+---
+
+`.iasi/` contiene información de control necesaria para que IASI opere dentro de un proyecto.
+
+Parte de esa información puede componerse o heredarse entre ámbitos. Otra debe ser estrictamente local.
+
+Un ejemplo importante es:
+
+```text
+.iasi/validation.json
+```
+
+El resultado persistente de validación pertenece al proyecto o ámbito que fue validado.
+
+**No se hereda.**
+
+Heredar un estado de validación produciría una conclusión falsa: que un hijo está validado porque lo estaba su padre aunque sus entradas, reglas o contenido sean distintos.
+
+## Composición entre ámbitos
+
+Cuando existen configuraciones IASI en distintos niveles, pueden componerse de padre a hijo.
+
+La resolución se realiza desde el ámbito más general hacia el más próximo, y el más próximo puede refinar aquello que resulte heredable.
+
+Este mecanismo permite compartir comportamiento sin duplicarlo en todos los proyectos.
+
+Pero la herencia no debe aplicarse indiscriminadamente.
+
+Cada artefacto debe declarar o tener definida su semántica de composición.

@@ -1,0 +1,14 @@
+---
+title: "Estructura de un proyecto IASI"
+navbar-title: "Estructura"
+---
+
+La metodología define responsabilidades.
+
+La estructura del proyecto les proporciona un lugar estable.
+
+IASI utiliza directorios y artefactos con significado conocido para que personas, Sistemas Inteligentes y herramientas puedan encontrar información sin depender de convenciones implícitas de cada equipo.
+
+La estructura es un **contrato operativo**, no una decoración del repositorio.
+
+No todos los proyectos necesitan materializar todos los directorios desde el primer minuto. La estructura puede crecer conforme aparecen capacidades y artefactos. Lo importante es que, cuando una categoría existe, conserve su semántica.

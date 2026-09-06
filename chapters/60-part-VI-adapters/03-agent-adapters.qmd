@@ -1,0 +1,28 @@
+---
+title: "Adapters de agente"
+navbar-title: "Agentes"
+---
+
+Un adapter de agente traduce capacidades IASI a los mecanismos que un entorno concreto ofrece.
+
+Puede materializar:
+
+- instrucciones;
+- commands;
+- skills;
+- configuración;
+- referencias a tools;
+- convenciones de directorio;
+- otros artefactos requeridos por el host.
+
+La traducción debe ser lo más delgada posible.
+
+El adapter no debería contener una segunda implementación independiente de la metodología.
+
+Su trabajo consiste en proyectar la definición canónica y resolver diferencias de formato o integración.
+
+## Adaptación atómica
+
+La materialización de un adapter debe tratarse como una operación controlada.
+
+Si no puede producir una proyección coherente, es preferible fallar de forma explícita que dejar un entorno a medio adaptar y permitir que el agente trabaje con una mezcla de versiones.

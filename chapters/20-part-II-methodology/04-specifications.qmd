@@ -1,0 +1,45 @@
+---
+title: "Specifications"
+navbar-title: "Specifications"
+---
+
+Una `specification` expresa **qué debe quedar satisfecho** por una unidad de trabajo o por un resultado.
+
+No es una lista de ocurrencias del agente ni un registro de cómo decidió implementar algo.
+
+Parte de:
+
+```text
+definitions
++ rules
++ configuration
++ alcance
+        ↓
+specification
+```
+
+La specification transforma conocimiento y restricciones en una expectativa verificable.
+
+Debe permitir responder, al menos, a estas preguntas:
+
+- ¿qué resultado se espera?;
+- ¿qué alcance tiene?;
+- ¿qué restricciones son aplicables?;
+- ¿qué queda explícitamente fuera?;
+- ¿cómo sabremos que se ha satisfecho?
+
+## Specification y solución
+
+Es importante no confundir una specification con la implementación.
+
+La specification puede limitar tecnologías o imponer decisiones cuando existe una razón para ello, pero no debería describir innecesariamente cada paso de ejecución.
+
+Su responsabilidad es establecer el contrato del resultado.
+
+## Criterios de aceptación
+
+Siempre que sea posible, una specification debe conducir a criterios que permitan validar el resultado.
+
+Una frase como «mejorar el rendimiento» es débil si no sabemos qué comportamiento debe cambiar ni cómo evaluar que la mejora es suficiente.
+
+La metodología intenta que el salto entre intención y aceptación pueda recorrerse sin depender de interpretaciones retrospectivas.

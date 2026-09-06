@@ -1,0 +1,13 @@
+# Cómo leer este volumen {.unnumbered}
+
+Este volumen tiene dos naturalezas.
+
+Por una parte, desarrolla una metodología. Conviene leer sus primeras partes en orden porque cada concepto prepara el siguiente: autoridad, artefactos, inputs, definitions, specifications, tasks, validations y estados forman un sistema.
+
+Por otra, es también un documento de referencia. Las partes dedicadas a estructura, workflows, commands y adapters están pensadas para volver a ellas durante el trabajo cotidiano.
+
+La terminología se mantiene deliberadamente estable. Cuando IASI utiliza palabras como `input`, `definition`, `specification`, `task`, `validation`, `state`, `workflow`, `command` o `adapter`, no las utiliza como sinónimos informales. Cada una representa una función distinta dentro del método.
+
+El objetivo no es memorizar una jerarquía de carpetas o una colección de órdenes.
+
+El objetivo es comprender **qué información posee autoridad, qué puede derivarse de ella, quién puede cambiarla, cómo se comprueba un resultado y cómo se conserva la historia de esas decisiones**.

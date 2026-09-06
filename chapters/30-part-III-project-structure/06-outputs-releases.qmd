@@ -1,0 +1,40 @@
+---
+title: "Outputs y releases"
+navbar-title: "Outputs y releases"
+---
+
+`outputs/` y `releases/` representan momentos diferentes del ciclo de vida de un resultado.
+
+## Outputs
+
+`outputs/` contiene resultados materializados por el trabajo.
+
+Pueden ser código, documentos, paquetes, informes, binarios u otros artefactos derivados.
+
+Que algo aparezca en `outputs/` no significa necesariamente que esté aceptado o publicado.
+
+## Releases
+
+`releases/` contiene resultados preparados para entrega o publicación según las reglas del proyecto.
+
+```text
+trabajo
+   ↓
+outputs/
+   ↓
+validación y aceptación
+   ↓
+releases/
+```
+
+## Evitar realimentación accidental
+
+Las herramientas utilizadas para construir un resultado pueden producir sus propios directorios temporales.
+
+Esos artefactos intermedios no deberían mezclarse con la salida final si eso hace que vuelvan a entrar como fuente del siguiente build.
+
+Cuando una herramienta necesita un directorio de construcción, conviene aislarlo y enrutar únicamente el resultado final hacia `outputs/`.
+
+La regla general es sencilla:
+
+> **Los resultados derivados no deben reaparecer accidentalmente como nuevas entradas del mismo proceso de materialización.**

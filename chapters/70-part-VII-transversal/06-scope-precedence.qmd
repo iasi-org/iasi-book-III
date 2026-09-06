@@ -1,0 +1,42 @@
+---
+title: "Ámbito y precedencia"
+navbar-title: "Ámbito y precedencia"
+---
+
+IASI necesita combinar información procedente de distintos niveles.
+
+Puede existir configuración común para varios proyectos, reglas compartidas y especializaciones locales.
+
+La resolución debe ser explícita.
+
+## De lo general a lo próximo
+
+En estructuras componibles, IASI puede construir el contexto desde el ámbito padre hacia el hijo.
+
+El ámbito más próximo puede refinar aquello que sea heredable.
+
+```text
+general
+  ↓
+organización
+  ↓
+proyecto
+  ↓
+subproyecto
+```
+
+No todo se hereda.
+
+El estado local de validación es un ejemplo claro de información que debe permanecer vinculada al ámbito concreto.
+
+## Especificidad
+
+La proximidad no es la única dimensión.
+
+Las rules pueden resolver también por especificidad semántica: una regla de lenguaje es más específica que una regla genérica de coding para ese lenguaje.
+
+## Resolver, no adivinar
+
+Cuando no existe una regla de precedencia aplicable y dos fuentes incompatibles reclaman autoridad sobre el mismo aspecto, el resultado correcto es un conflicto explícito.
+
+IASI no debería esconderlo escogiendo una opción al azar.

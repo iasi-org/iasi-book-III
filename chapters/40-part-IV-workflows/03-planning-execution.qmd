@@ -1,0 +1,28 @@
+---
+title: "Planificación y ejecución"
+navbar-title: "Planificar y ejecutar"
+---
+
+Una vez existe conocimiento suficiente, IASI puede convertir una necesidad en trabajo ejecutable.
+
+```text
+definitions
++ rules
++ configuration
+      ↓
+specifications
+      ↓
+tasks
+      ↓
+ejecución
+```
+
+La planificación no necesita descomponer por adelantado todo el proyecto hasta el último detalle.
+
+Puede materializar únicamente aquello que el alcance actual permite decidir con suficiente confianza.
+
+Las tasks se ejecutan dentro del contrato de su specification y respetando las rules aplicables.
+
+El ejecutor puede ser una persona, un Sistema Inteligente, una herramienta o una combinación de ellos.
+
+Lo importante es que el resultado vuelva al proceso como un artefacto observable y pueda ser validado.

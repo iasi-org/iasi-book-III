@@ -1,0 +1,26 @@
+---
+title: "archive"
+navbar-title: "archive"
+---
+
+Archivar un input significa retirarlo del contexto activo sin destruir su historia.
+
+La operación mantiene la rama lógica del documento:
+
+```text
+inputs/externals/... → inputs/externals/archived/...
+inputs/internals/... → inputs/internals/archived/...
+inputs/obtained/...  → inputs/obtained/archived/...
+```
+
+El nombre archivado puede incorporar una marca temporal `YYYYMMDDhhmmss` para conservar versiones sin colisiones.
+
+## Efecto sobre la validación
+
+Los subárboles `archived/` se excluyen del conjunto de inputs activos y, por tanto, de los hashes utilizados para validar el estado vigente.
+
+Archivar no reescribe el documento.
+
+No cambia su procedencia.
+
+Solo modifica su participación en el contexto activo.

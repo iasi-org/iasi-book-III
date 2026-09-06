@@ -1,0 +1,14 @@
+---
+title: "Adapters e integración"
+navbar-title: "Adapters"
+---
+
+IASI pretende vivir sobre cualquier agente y, cuando sea necesario, sobre distintos modelos o runtimes.
+
+Eso solo es posible si la metodología no adopta como propios los formatos particulares de una herramienta.
+
+Los adapters forman esa frontera.
+
+> **IASI no se adapta metodológicamente al agente. El adapter adapta el agente a IASI.**
+
+Esta parte desarrolla cómo se conserva una semántica canónica mientras cambian los entornos de ejecución.

@@ -1,0 +1,26 @@
+---
+title: "Automations"
+navbar-title: "Automations"
+---
+
+Una automation ejecuta de forma automática una operación o parte de un workflow cuando se cumplen determinadas condiciones.
+
+No debe confundirse con el workflow.
+
+El workflow define la lógica del recorrido.
+
+La automation elimina intervención manual en uno o varios puntos de ese recorrido.
+
+```text
+workflow
+  ├── actividad humana
+  ├── command
+  ├── automation
+  └── validation
+```
+
+Automatizar no cambia la autoridad de una transición.
+
+Si una aceptación requiere decisión humana, envolver el proceso en una automation no elimina ese requisito.
+
+La automatización es válida cuando conserva las precondiciones, validaciones y límites establecidos por la metodología.

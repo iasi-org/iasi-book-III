@@ -1,0 +1,57 @@
+---
+title: "Definitions"
+navbar-title: "Definitions"
+---
+
+Los inputs conservan información.
+
+Las `definitions` representan **lo que IASI ha comprendido y estructurado a partir de esa información**.
+
+La relación no es uno a uno.
+
+Un único input puede contribuir a varias definitions y una definition puede necesitar múltiples inputs, decisiones y observaciones para quedar suficientemente formada.
+
+```text
+inputs
+  ├── external
+  ├── internal
+  └── obtained
+        ↓
+ análisis · contraste · reconciliación
+        ↓
+definitions
+```
+
+Una definition no debería ser una copia cosmetizada del documento de origen.
+
+Su función es hacer explícito conocimiento utilizable por el resto del proceso: conceptos, restricciones, relaciones, límites, decisiones consolidadas, incógnitas relevantes o cualquier otra estructura que permita razonar con mayor precisión.
+
+## Conocido, inferido y desconocido
+
+IASI debe conservar la diferencia entre:
+
+```text
+conocido
+inferido
+desconocido
+```
+
+Una inferencia puede ser útil, pero no debe adquirir silenciosamente la misma autoridad que una evidencia o una decisión confirmada.
+
+Del mismo modo, una incógnita relevante debe poder permanecer explícita. La metodología no exige rellenar todos los huecos antes de comenzar; exige no ocultarlos.
+
+## Generación y revisión
+
+Las definitions pueden materializarse mediante un skill, un workflow, una herramienta o trabajo humano.
+
+El mecanismo utilizado no cambia su responsabilidad.
+
+El Sistema Inteligente puede proponer una interpretación. La condición canónica procede del proceso que la revisa, acepta y relaciona con sus fuentes, no de la confianza aparente con la que fue redactada.
+
+## Evolución
+
+Cuando cambia un input activo puede ser necesario revisar las definitions que dependen de él.
+
+Ese cambio puede propagarse hacia specifications, tasks, validaciones o artefactos derivados.
+
+IASI no necesita regenerarlo todo indiscriminadamente. Necesita saber **qué queda afectado**.

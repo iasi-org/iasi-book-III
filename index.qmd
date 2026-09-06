@@ -1,8 +1,32 @@
 ---
-title: "Del conocimiento a la ingeniería"
-subtitle: "Volumen III · Del método a la metodología"
+title: "Metodología IASI"
+subtitle: "Volumen III · Ingeniería Aumentada con Sistemas Inteligentes"
 ---
 
-# Del método a la metodología
+# Del método a la metodología {.unnumbered}
 
-Este volumen desarrolla la metodología IASI como un proceso estructurado: una visión general y, a continuación, cada una de sus partes canónicas.
+IASI nació de una pregunta práctica: **¿cómo hacemos ingeniería cuando un Sistema Inteligente participa en el propio trabajo de ingeniería?**
+
+Responderla exige algo más que aprender a utilizar un modelo, un agente o una interfaz.
+
+Necesitamos saber qué información tiene autoridad, cómo se convierte en conocimiento operativo, qué trabajo puede ejecutarse, cómo se valida, qué estado puede aceptarse y qué ocurre cuando cambian las fuentes de las que dependía una decisión.
+
+Este volumen describe esa metodología.
+
+No presenta una receta ligada a una herramienta concreta. Define un sistema de artefactos, responsabilidades, ciclos de vida, workflows, commands y adapters que permite trabajar sobre agentes y modelos diferentes conservando una semántica común.
+
+La idea que atraviesa todo el volumen puede resumirse así:
+
+```text
+metodología  → qué debe ocurrir
+estructura   → dónde vive
+workflow     → cómo se recorre
+command      → cómo se solicita
+adapter      → cómo se ejecuta en un entorno concreto
+```
+
+La herramienta `iasi` materializa y automatiza partes de ese sistema.
+
+Pero la herramienta no es la metodología.
+
+Y el agente tampoco.

@@ -1,0 +1,30 @@
+---
+title: "Contenido derivado y contenido de autor"
+navbar-title: "Derivado y autor"
+---
+
+No todos los artefactos son completamente generables ni completamente manuales.
+
+Una guía de usuario, por ejemplo, puede derivar gran parte de su estructura y contenido del conocimiento del proyecto y contener al mismo tiempo explicaciones, ejemplos o decisiones editoriales mantenidas por una persona.
+
+IASI debe permitir esa combinación sin convertir la regeneración en una trituradora de trabajo humano.
+
+Una estrategia útil separa:
+
+```text
+contenido derivable
++
+includes de autor
+```
+
+Al regenerar:
+
+- IASI actualiza lo derivable;
+- conserva los includes de autor;
+- detecta si las dependencias del contenido de autor han cambiado;
+- marca ese contenido como `affected` cuando necesita revisión;
+- no lo reescribe automáticamente salvo que exista autorización explícita.
+
+Este patrón generaliza más allá de la documentación.
+
+Permite trabajar con cualquier artefacto parcialmente derivable manteniendo una frontera clara entre **materialización automática** y **aportación profesional deliberada**.

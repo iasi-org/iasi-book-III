@@ -1,22 +1,26 @@
 project:
   type: book
+  output-dir: outputs
 
   resources:
     - LICENSES/*.txt
 
 profile:
   group:
-    - [html, pdf, epub]
+    - [html, pdf]
 
 metadata-files:
   - _book-structure.yml
 
 lang: es
 
+resource-path:
+  - resources
+
 book:
-  title: "Ingeniería aumentada por sistemas inteligentes"
+  title: "Ingeniería aumentada con sistemas inteligentes"
   author: "Javier G. Grandez"
-  output-file: "iasi-book-III"
+  output-file: "IASI_Vol_III"
 
 copyright:
   holder: "Javier G. Grandez"
@@ -27,7 +31,7 @@ license: "CC BY"
 filters:
   - iasi-plantuml
   - resources/lua/iasi-js.lua
-  
+
 filter-options:
   plantuml:
     enabled: true

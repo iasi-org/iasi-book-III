@@ -1,0 +1,36 @@
+---
+title: "Directorios derivados de adapters"
+navbar-title: "Adapters derivados"
+---
+
+Un proyecto puede utilizar uno o varios agentes o entornos.
+
+Por ejemplo:
+
+```text
+.iasi/
+.codex/
+.copilot/
+```
+
+La relación entre ellos no es simétrica.
+
+> **`.iasi/` representa la información canónica de IASI; los directorios específicos de herramientas son proyecciones derivadas.**
+
+Un adapter puede materializar prompts, instrucciones, configuraciones, skills u otros archivos que un entorno concreto necesite.
+
+Esos archivos existen para integrar IASI con la herramienta.
+
+No deben convertirse en el lugar donde se redefine la metodología.
+
+```text
+IASI canónico
+     ↓
+   adapter
+     ↓
+.codex/ · .copilot/ · ...
+```
+
+Si cambia el formato requerido por una herramienta, cambia el adapter.
+
+No debería ser necesario reescribir el command o workflow canónico para seguir utilizándolo.
