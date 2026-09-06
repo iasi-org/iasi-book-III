@@ -1,5 +1,5 @@
 project:
-  output-dir: outputs/pdf
+  output-dir: _outputs/pdf
 
 format:
   pdf:

@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "releases/publish/**"
+      - "release/**"
       - ".github/workflows/deploy-github-pages.yml"
   workflow_dispatch:
 
@@ -38,7 +38,7 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: ./releases/publish
+          path: ./release
 
       - name: Deploy GitHub Pages
         id: deployment

@@ -10,8 +10,8 @@ publication:
 paths:
   inputs: inputs
   orchestration: orchestration
-  outputs: outputs
-  releases: releases
+  outputs: _outputs
+  release: release
 
 exclude:
   - includes
