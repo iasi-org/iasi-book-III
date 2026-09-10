@@ -1,0 +1,28 @@
+---
+title: "Agente, modelo y runtime"
+navbar-title: "Agente y modelo"
+---
+
+Agente y modelo no son la misma dependencia.
+
+Un agente puede utilizar diferentes modelos.
+
+Un mismo modelo puede aparecer detrás de agentes o runtimes distintos.
+
+IASI evita acoplar ambas decisiones.
+
+```text
+IASI
+ ↓
+adapter de agente / entorno
+ ↓
+runtime
+ ↓
+modelo o proveedor
+```
+
+En algunos casos el adapter necesita conocer capacidades del runtime o del modelo disponible.
+
+Eso no convierte esas capacidades en requisitos universales de la metodología.
+
+La separación permite sustituir un proveedor de modelo sin tener que redefinir el significado de una task, una validation o un command.

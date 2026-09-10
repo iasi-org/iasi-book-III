@@ -1,0 +1,44 @@
+---
+title: "validate"
+navbar-title: "validate"
+---
+
+`/validate` fue el primer command canónico definido para IASI.
+
+Su responsabilidad es comprobar que las condiciones necesarias permiten continuar el proceso.
+
+En su forma inicial evalúa:
+
+```text
+instructions
++
+inputs activos
+```
+
+y materializa un resultado persistente:
+
+```text
+.iasi/validation.json
+```
+
+## Fallo persistente
+
+Si la validación falla, el estado no desaparece al terminar la conversación.
+
+El resultado persistente bloquea las fases posteriores que dependan de esa validación.
+
+Esto evita que un nuevo agente o una nueva sesión continúen simplemente porque no conocen el fallo anterior.
+
+## Invalidación por cambio
+
+Una validación solo es válida respecto al conjunto de entradas que fue comprobado.
+
+IASI puede utilizar hashes de esas dependencias.
+
+Si cambian, la validación anterior deja de ser aplicable y debe ejecutarse de nuevo.
+
+## Estado local
+
+`.iasi/validation.json` es local.
+
+No debe heredarse desde un proyecto padre, porque la validez de un ámbito no demuestra la validez de otro.

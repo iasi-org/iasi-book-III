@@ -1,0 +1,65 @@
+---
+title: "Artefactos y trazabilidad"
+navbar-title: "Trazabilidad"
+---
+
+IASI trabaja con artefactos porque los artefactos permiten conservar el razonamiento de ingeniería fuera de la memoria de una conversación.
+
+No todos los artefactos tienen la misma naturaleza.
+
+Podemos distinguir, al menos, tres grandes clases:
+
+```text
+fuentes
+  inputs
+
+artefactos canónicos de ingeniería
+  definitions
+  rules
+  configuration
+  specifications
+  tasks
+  validations
+  states
+
+artefactos derivados
+  código
+  documentación generada
+  configuraciones materializadas
+  adapters
+  paquetes
+  publicaciones
+```
+
+La distinción importa especialmente cuando una parte del sistema puede regenerarse.
+
+Si un documento se deriva de unas definitions, modificar manualmente el resultado sin conservar esa decisión rompe la trazabilidad. La siguiente materialización podría perderla.
+
+Por eso IASI intenta conservar una cadena de procedencia:
+
+```text
+fuente
+  ↓
+interpretación
+  ↓
+decisión
+  ↓
+trabajo
+  ↓
+resultado
+  ↓
+evidencia
+```
+
+La trazabilidad no pretende registrar cada token producido por un modelo.
+
+Pretende poder responder preguntas de ingeniería:
+
+- ¿por qué existe este comportamiento?;
+- ¿qué necesidad lo originó?;
+- ¿qué specification lo exige?;
+- ¿qué task lo materializó?;
+- ¿qué validación lo comprobó?;
+- ¿qué cambio posterior podría afectarlo?
+
+Cuando estas relaciones pueden reconstruirse, el proyecto deja de depender de recordar «qué hablamos aquel día».

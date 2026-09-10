@@ -1,0 +1,47 @@
+---
+title: "Tasks"
+navbar-title: "Tasks"
+---
+
+Las `tasks` convierten una specification en unidades de trabajo ejecutables.
+
+Una task no crea por sí sola nuevo alcance.
+
+Debe poder relacionarse con una necesidad, una specification o una decisión que justifique su existencia.
+
+```text
+specification
+     ↓
+  tasks
+     ↓
+ ejecución
+```
+
+El tamaño adecuado de una task no se define por número de archivos o líneas de código.
+
+Debe ser suficientemente concreta para poder:
+
+- saber cuándo comienza;
+- conocer qué pretende producir;
+- identificar sus dependencias;
+- ejecutarla de forma controlada;
+- validar su resultado;
+- determinar cuándo puede cerrarse.
+
+## Ejecución y estado
+
+Una task atraviesa estados.
+
+La capacidad para ejecutar una task no concede automáticamente permiso para cerrarla. La transición de estado debe respetar las validaciones y las reglas del workflow correspondiente.
+
+IASI puede permitir que distintas personas, agentes o herramientas ejecuten tasks diferentes.
+
+La unidad metodológica sigue siendo la task y su contrato, no la identidad de quien materializa el trabajo.
+
+## Resultado
+
+La ejecución produce un `outcome`.
+
+El outcome es el resultado observado de la operación. No debe confundirse con un argumento inventado para justificar retrospectivamente que una task está terminada.
+
+Esta distinción será importante al estudiar los commands de task.

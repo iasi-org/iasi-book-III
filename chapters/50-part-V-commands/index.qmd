@@ -1,0 +1,22 @@
+---
+title: "Commands"
+navbar-title: "Commands"
+---
+
+Los commands proporcionan un vocabulario canónico para solicitar operaciones IASI.
+
+Un command no pertenece a Codex, Copilot, Claude ni a ningún otro agente.
+
+Su significado pertenece a IASI.
+
+El adapter decide cómo presentar o invocar esa operación en cada entorno.
+
+```text
+command IASI
+     ↓
+   adapter
+     ↓
+sintaxis / mecanismo del entorno
+```
+
+Esta separación permite que el mismo workflow sobreviva al cambio de herramienta.

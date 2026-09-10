@@ -1,0 +1,31 @@
+---
+title: "Por qué existen los adapters"
+navbar-title: "Propósito"
+---
+
+Cada agente posee convenciones diferentes.
+
+Puede buscar instrucciones en directorios distintos, utilizar formatos propios para commands o skills, ofrecer herramientas diferentes y tener mecanismos específicos para cargar contexto.
+
+Si la metodología dependiera directamente de esas convenciones, terminaríamos manteniendo varias IASI:
+
+```text
+IASI para Codex
+IASI para Copilot
+IASI para Claude
+IASI para ...
+```
+
+El adapter evita esa fragmentación.
+
+```text
+semántica IASI
+      ↓
+   adapter
+      ↓
+semántica del host
+```
+
+El núcleo define la operación.
+
+El adapter conoce el idioma operativo del entorno.

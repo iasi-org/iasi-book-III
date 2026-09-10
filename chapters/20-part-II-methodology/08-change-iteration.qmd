@@ -1,0 +1,50 @@
+---
+title: "Cambio e iteración"
+navbar-title: "Cambio e iteración"
+---
+
+Los proyectos cambian.
+
+Llegan nuevos documentos, se toman decisiones, aparecen restricciones, se descubren datos y se invalidan supuestos anteriores.
+
+IASI no intenta eliminar ese cambio. Intenta **hacer visible su impacto**.
+
+Cuando cambia una fuente, la pregunta no es solamente «¿qué fichero debo regenerar?».
+
+La pregunta es:
+
+> **¿qué conocimiento, decisiones y resultados dependen de aquello que ha cambiado?**
+
+```text
+nuevo input
+   ↓
+definitions afectadas
+   ↓
+specifications afectadas
+   ↓
+tasks / validations afectadas
+   ↓
+artefactos derivados
+```
+
+## Invalidación
+
+Una validación puede ser correcta para un conjunto concreto de entradas y dejar de ser válida cuando esas entradas cambian.
+
+Por eso determinados estados pueden asociarse a hashes o identificadores de las fuentes que justificaron su resultado.
+
+Cambiar la dependencia invalida la conclusión anterior.
+
+## Archivar no es borrar
+
+Un input que deja de estar activo puede archivarse sin perder su naturaleza ni su historia.
+
+El material archivado deja de participar en el contexto vigente, pero sigue permitiendo reconstruir cómo evolucionó el proyecto.
+
+## Contenido parcialmente derivable
+
+Algunos artefactos combinan partes derivables y contenido editorial o profesional añadido manualmente.
+
+IASI debe regenerar únicamente aquello que pueda derivarse de forma segura.
+
+Si cambia una dependencia de contenido mantenido por autor, el comportamiento correcto puede ser marcarlo como **affected** y solicitar revisión, no reescribirlo silenciosamente.

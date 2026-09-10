@@ -1,0 +1,31 @@
+---
+title: "Skills"
+navbar-title: "Skills"
+---
+
+Un skill encapsula conocimiento operativo reutilizable para realizar una clase de trabajo.
+
+No es una fuente de verdad del proyecto.
+
+Es un mecanismo que ayuda a transformar artefactos respetando la metodología.
+
+Por ejemplo, la generación de definitions a partir de inputs puede apoyarse en un skill que indique cómo:
+
+- identificar fuentes;
+- extraer conceptos;
+- detectar contradicciones;
+- conservar incertidumbre;
+- relacionar cada conclusión con evidencia;
+- producir la estructura canónica esperada.
+
+El skill puede ser utilizado por distintos agentes.
+
+Su valor reside precisamente en que la forma de trabajar no queda encerrada en el prompt improvisado de una sesión.
+
+## Skill y command
+
+Un command expresa una operación.
+
+Un skill aporta conocimiento para ejecutarla.
+
+Pueden colaborar, pero no son equivalentes.

@@ -1,0 +1,42 @@
+---
+title: "Commands de task"
+navbar-title: "task.*"
+---
+
+IASI dispone de un pequeño vocabulario para controlar el ciclo de vida de una task.
+
+La forma canónica acordada es:
+
+```text
+task.start(selector)
+task.run(selector, completion = "auto")
+task.done(selector)
+task.rerun(selector, completion = "auto")
+task.reopen(selector)
+```
+
+## `task.start`
+
+Inicia una task seleccionada cuando sus precondiciones permiten comenzar.
+
+## `task.run`
+
+Ejecuta la task.
+
+`completion = "auto"` permite que la operación complete automáticamente la transición prevista cuando las condiciones del workflow lo permitan.
+
+## `task.done`
+
+Materializa la finalización de una task.
+
+El outcome procede de la ejecución y de la evidencia observada. No se introduce como argumento de `task.done` para forzar una conclusión.
+
+## `task.rerun`
+
+Permite volver a ejecutar trabajo desde estados como `done` o `failed` cuando el workflow lo autoriza.
+
+## `task.reopen`
+
+Reabre trabajo que ya había sido cerrado para permitir una nueva intervención explícita.
+
+La existencia de commands diferentes hace visibles transiciones que de otro modo quedarían ocultas dentro del comportamiento del agente.

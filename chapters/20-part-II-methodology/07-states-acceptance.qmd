@@ -1,0 +1,40 @@
+---
+title: "Estados y aceptación"
+navbar-title: "Estados y aceptación"
+---
+
+Los estados permiten saber **dónde se encuentra el trabajo** sin reconstruir toda su historia cada vez.
+
+Pero un estado no debe convertirse en una etiqueta decorativa.
+
+Para que sea significativo debe estar respaldado por las condiciones que permiten alcanzarlo.
+
+Una task puede estar iniciada, en ejecución, completada, fallida, reabierta o en cualquier otro estado definido por su ciclo de vida. Lo importante no es el vocabulario concreto, sino que las transiciones sean explícitas y reproducibles.
+
+## Done no significa necesariamente accepted
+
+Completar el trabajo y aceptarlo son responsabilidades diferentes.
+
+`done` puede expresar que la ejecución prevista ha finalizado.
+
+La aceptación expresa que el resultado satisface las condiciones que justifican su incorporación al estado válido del proyecto.
+
+```text
+trabajo realizado
+      ↓
+validaciones
+      ↓
+evidencia
+      ↓
+aceptación
+      ↓
+estado consolidado
+```
+
+Esta separación permite que IASI conserve una frontera clara entre **hacer** y **dar por bueno**.
+
+## El estado es materializado
+
+El estado relevante no debe depender de que una persona o un agente recuerden qué ocurrió.
+
+Debe quedar persistido de forma que el siguiente participante pueda continuar el trabajo con el mismo punto de partida observable.

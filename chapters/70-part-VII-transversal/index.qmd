@@ -1,0 +1,12 @@
+---
+title: "Mecanismos transversales"
+navbar-title: "Mecanismos"
+---
+
+Algunos elementos de IASI no pertenecen a una única fase del ciclo.
+
+Rules, skills, templates, configuration y automations pueden intervenir en numerosos workflows y afectar a múltiples clases de artefactos.
+
+Esta parte los estudia como mecanismos reutilizables.
+
+También recoge dos problemas transversales: cómo resolver alcance y precedencia y cómo combinar contenido derivado con aportaciones mantenidas por personas.

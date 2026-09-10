@@ -1,0 +1,12 @@
+---
+title: "Fundamentos de IASI"
+navbar-title: "Fundamentos"
+---
+
+Una metodología no comienza por sus comandos.
+
+Comienza por las decisiones que determinan **qué consideramos conocimiento, qué consideramos evidencia, quién tiene autoridad para decidir y cómo sabemos que un resultado puede aceptarse**.
+
+IASI se apoya en un conjunto pequeño de principios que permanecen estables aunque cambien los modelos, los agentes, los lenguajes o las herramientas utilizadas para ejecutar el trabajo.
+
+Esta parte establece esos principios antes de describir el ciclo metodológico.

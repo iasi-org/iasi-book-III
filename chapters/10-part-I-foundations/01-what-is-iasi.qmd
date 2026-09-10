@@ -1,0 +1,39 @@
+---
+title: "Qué es IASI"
+navbar-title: "Qué es IASI"
+---
+
+IASI es una metodología de **Ingeniería Aumentada con Sistemas Inteligentes**.
+
+Su propósito es permitir que personas y Sistemas Inteligentes participen en un mismo proceso de ingeniería sin convertir una conversación, un prompt o el comportamiento particular de una herramienta en la fuente de verdad del proyecto.
+
+IASI define:
+
+- artefactos con semántica explícita;
+- relaciones entre esos artefactos;
+- reglas de autoridad y precedencia;
+- ciclos de vida y estados;
+- mecanismos de validación;
+- workflows que recorren el proceso;
+- commands que solicitan operaciones canónicas;
+- adapters que proyectan esas operaciones sobre entornos concretos.
+
+IASI **no es un modelo de lenguaje**.
+
+Tampoco es un agente central que gobierna el proyecto.
+
+Un agente puede analizar, proponer, transformar, ejecutar o validar trabajo. Pero su autoridad no procede de ser «el agente de IASI». La autoridad permanece en las fuentes, los artefactos canónicos, las decisiones aprobadas y las responsabilidades humanas.
+
+```text
+fuentes de autoridad
+        ↓
+artefactos de ingeniería
+        ↓
+workflows y commands
+        ↓
+agentes · herramientas · personas
+```
+
+Esto permite utilizar IASI sobre entornos diferentes sin redefinir la metodología para cada uno.
+
+La implementación `iasi` puede automatizar operaciones, comprobar estructura, materializar adapters o gestionar estados. Pero **la herramienta implementa la metodología; no la sustituye**.
