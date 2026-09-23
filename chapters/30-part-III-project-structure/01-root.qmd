@@ -1,0 +1,80 @@
+---
+title: "La raíz del proyecto"
+navbar-title: "Raíz del proyecto"
+---
+
+Una estructura de referencia puede tomar esta forma:
+
+```text
+project/
+├── .iasi/
+├── inputs/
+├── definitions/
+├── rules/
+├── configuration/
+├── specifications/
+├── tasks/
+├── validations/
+├── states/
+├── outputs/
+├── releases/
+├── .codex/
+└── .copilot/
+```
+
+La presencia concreta depende de las capacidades utilizadas.
+
+IASI no exige crear carpetas vacías para simular completitud.
+
+## Dos familias de directorios
+
+Conviene distinguir:
+
+**Artefactos de ingeniería**
+
+```text
+inputs/
+definitions/
+rules/
+configuration/
+specifications/
+tasks/
+validations/
+states/
+outputs/
+releases/
+```
+
+representan información y resultados del proyecto.
+
+**Infraestructura de IASI y de los entornos**
+
+```text
+.iasi/
+.codex/
+.copilot/
+...
+```
+
+permite que la metodología se materialice y sea utilizada por herramientas concretas.
+
+La diferencia es importante porque las carpetas específicas de un agente no deben convertirse en la fuente de verdad del proyecto.
+
+## Estructura semántica
+
+Cambiar un nombre físico puede ser posible cuando exista una razón y la configuración lo soporte.
+
+Pero hacerlo no debe borrar la semántica.
+
+Un directorio llamado de otra manera sigue necesitando una responsabilidad inequívoca. IASI no debería tener que adivinar si una carpeta contiene evidencia original, conocimiento normalizado o resultados derivados.
+
+
+## Estructura mínima y estructura creciente
+
+La estructura de referencia no significa que todo proyecto deba comenzar con todas las carpetas vacías.
+
+IASI distingue entre **semántica requerida** y **materialización necesaria en cada momento**.
+
+Un proyecto crea los espacios que necesita conforme utiliza las capacidades correspondientes. Lo importante es que, cuando exista un artefacto, su ubicación y su significado sean inequívocos.
+
+Por tanto, la estructura puede crecer con el proyecto sin perder el contrato común.

@@ -1,0 +1,35 @@
+---
+title: "Autoridad y fuentes de verdad"
+navbar-title: "Autoridad"
+---
+
+Uno de los problemas que aparecen al incorporar Sistemas Inteligentes a la ingeniería es confundir **capacidad de actuación** con **autoridad**.
+
+Un agente puede ser capaz de modificar cien archivos. Eso no significa que pueda decidir legítimamente qué debe contener el sistema.
+
+IASI distribuye la autoridad entre artefactos con responsabilidades diferentes:
+
+```text
+inputs             → de dónde procede la información
+definitions        → qué hemos comprendido
+rules              → qué normas deben respetarse
+configuration      → con qué parámetros trabajamos
+specifications     → qué resultado se pretende obtener
+tasks              → qué trabajo concreto debe ejecutarse
+validations        → qué evidencia demuestra el resultado
+states             → cuál es el estado materializado del proceso
+```
+
+Ninguna de estas piezas debe interpretarse aisladamente.
+
+Una `specification` no puede contradecir una `rule` aplicable. Una `task` no debe inventar alcance que no exista en su specification. Un estado `done` carece de valor si no puede relacionarse con el trabajo y las validaciones que lo justifican.
+
+La precedencia tampoco se reduce a «lo último gana».
+
+Cada clase de artefacto posee sus propias reglas. En el caso de las rules, por ejemplo, una regla más específica puede prevalecer sobre una genérica cuando ambas regulan el mismo aspecto. En estructuras heredables, el ámbito más próximo puede refinar el superior.
+
+La idea común es:
+
+> **La autoridad debe ser explícita y resoluble.**
+
+Cuando dos fuentes incompatibles reclaman autoridad sobre el mismo aspecto, el sistema no debería elegir silenciosamente la interpretación más conveniente. Debe detectar el conflicto y resolverlo mediante las reglas correspondientes o mediante una decisión humana.

@@ -1,0 +1,30 @@
+---
+title: "Workflow de cambio"
+navbar-title: "Cambio"
+---
+
+Un cambio comienza con nueva información, no con la obligación de regenerar todo el proyecto.
+
+```text
+nuevo input
+   ↓
+clasificar origen
+   ↓
+incorporar sin destruir historia
+   ↓
+analizar impacto
+   ↓
+marcar affected / invalidar
+   ↓
+actualizar únicamente lo necesario
+   ↓
+volver a validar
+```
+
+La propagación depende de las relaciones de trazabilidad.
+
+Si una definition no depende del input modificado, no existe razón metodológica para reconstruirla.
+
+Si un artefacto es parcialmente derivable, puede regenerarse su parte automática y conservar la parte de autor.
+
+El workflow de cambio convierte la trazabilidad en una herramienta operativa: permite avanzar sin tratar cada modificación como si el proyecto comenzara de cero.

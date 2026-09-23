@@ -1,0 +1,25 @@
+---
+title: "Capacidades y degradación"
+navbar-title: "Capacidades"
+---
+
+No todos los entornos pueden hacer lo mismo.
+
+Un agente puede disponer de edición de archivos, ejecución de shell, acceso a red, MCP, memoria persistente o ninguna de esas capacidades.
+
+El adapter debe conocer las capacidades relevantes antes de prometer una operación.
+
+## No simular garantías
+
+Cuando falta una capacidad necesaria, IASI no debería fingir que la garantía se mantiene.
+
+Las respuestas posibles dependen del workflow:
+
+- utilizar un mecanismo alternativo equivalente;
+- degradar explícitamente la operación;
+- solicitar intervención humana;
+- bloquear la transición.
+
+Lo importante es que la diferencia sea visible.
+
+> **La portabilidad no consiste en fingir que todos los agentes son iguales. Consiste en conservar la semántica de IASI a pesar de que no lo sean.**

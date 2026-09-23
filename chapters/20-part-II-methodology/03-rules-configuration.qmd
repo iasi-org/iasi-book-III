@@ -1,0 +1,46 @@
+---
+title: "Rules y configuración"
+navbar-title: "Rules y configuración"
+---
+
+Comprender el problema no basta para actuar.
+
+El trabajo se realiza dentro de normas, convenciones, restricciones y parámetros que también deben hacerse explícitos.
+
+IASI separa dos conceptos relacionados.
+
+## Rules
+
+Una `rule` expresa una norma que debe, no debe o conviene respetar dentro de un ámbito.
+
+Puede regular estilo, arquitectura, seguridad, documentación, compatibilidad, procesos o cualquier otro aspecto repetible de la ingeniería.
+
+Las rules pueden ser generales o específicas. Cuando dos reglas regulan el mismo aspecto, **la más específica puede prevalecer sobre la genérica**.
+
+Por ejemplo, una regla de estilo específica para Python puede refinar una regla de estilo genérica.
+
+La plantilla normalizada de una rule puede contener:
+
+```text
+título
+metadata
+rule
+examples
+exceptions
+rationale
+sources
+```
+
+Los ejemplos son opcionales, pero resultan útiles para mostrar casos positivos, negativos o límites de aplicación.
+
+## Configuration
+
+La configuración expresa valores concretos que parametrizan el trabajo.
+
+Una rule puede establecer que una tecnología crítica debe permanecer fijada durante un proyecto. La configuración indica **qué versión concreta** está fijada.
+
+Una rule expresa política.
+
+La configuration materializa parámetros.
+
+Separar ambas permite cambiar valores sin reescribir la norma y reutilizar la misma norma en proyectos distintos.

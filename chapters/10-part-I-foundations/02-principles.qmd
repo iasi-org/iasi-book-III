@@ -1,0 +1,52 @@
+---
+title: "Principios metodológicos"
+navbar-title: "Principios"
+---
+
+IASI parte de una idea sencilla: una conversación es excelente para pensar, pero es un lugar frágil para conservar el conocimiento de ingeniería.
+
+Una decisión importante puede escribirse en un chat o en un documento con un coste prácticamente idéntico. En el segundo caso, además, puede quedar versionada, revisada, trazada, reutilizada y procesada por herramientas.
+
+Por eso IASI intenta que el conocimiento relevante **termine materializado en artefactos persistentes**.
+
+De este principio se derivan otros.
+
+## El prompt no es la fuente de verdad
+
+El prompt puede iniciar una acción y aportar contexto transitorio. No debe convertirse en el único lugar donde viven requisitos, decisiones, restricciones o criterios de aceptación.
+
+## La evidencia y la interpretación se separan
+
+Lo recibido no se reescribe para hacerlo más cómodo.
+
+Especialmente, `inputs/externals/` conserva exactamente aquello que llegó desde fuera. La normalización y la interpretación producen nuevos artefactos.
+
+## No se actúa más allá de lo conocido
+
+La falta de información no obliga siempre a detener todo el trabajo. Limita el alcance de aquello que puede hacerse legítimamente.
+
+IASI puede avanzar hasta donde permitan la información disponible, las restricciones y el alcance explícito. Lo que no puede hacer es completar silenciosamente los huecos mediante invención.
+
+## Lo derivado no sustituye a su fuente
+
+Código, documentos, configuraciones, adapters y otros resultados pueden ser materializados a partir de artefactos anteriores.
+
+Cuando eso ocurre debe conservarse la relación entre fuente y derivado.
+
+## La validación es parte del proceso
+
+La generación de un resultado no demuestra que sea correcto.
+
+IASI separa ejecución y validación y conserva evidencia suficiente para justificar el estado alcanzado.
+
+## Las herramientas son sustituibles
+
+Un command de IASI debe conservar su significado aunque cambie el agente que lo ejecuta.
+
+Los adapters absorben las particularidades del entorno; la metodología permanece.
+
+## La responsabilidad no se delega al Sistema Inteligente
+
+El Sistema Inteligente puede aumentar la capacidad de quien trabaja con él.
+
+La decisión profesional, la autoridad y la responsabilidad siguen perteneciendo a las personas y roles que las tienen asignadas.

@@ -1,0 +1,34 @@
+---
+title: "Modelo de workflow"
+navbar-title: "Modelo"
+---
+
+Un workflow es una secuencia coordinada de actividades con condiciones de entrada, transiciones y criterios de salida.
+
+No es simplemente una lista de pasos escrita en un prompt.
+
+Un workflow debería poder hacer explícitos:
+
+- objetivo;
+- entradas requeridas;
+- artefactos que puede leer;
+- artefactos que puede modificar;
+- commands que utiliza;
+- validaciones necesarias;
+- estados que puede producir;
+- puntos de decisión;
+- condiciones de finalización.
+
+La misma definición puede ejecutarse de formas diferentes.
+
+Una persona puede realizar manualmente determinados pasos. Un agente puede ejecutar otros. Una automatización puede encadenarlos cuando existan condiciones suficientes.
+
+La semántica del workflow no depende de quién pulsa el botón.
+
+## Workflow y metodología
+
+La metodología define las reglas del juego.
+
+El workflow define una forma válida de jugar una partida.
+
+Por eso un workflow no puede saltarse una validación obligatoria simplemente porque el agente utilizado tenga capacidad técnica para continuar.

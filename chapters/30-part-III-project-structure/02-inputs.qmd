@@ -1,0 +1,40 @@
+---
+title: "Estructura de inputs"
+navbar-title: "Inputs"
+---
+
+La estructura de referencia de los inputs distingue su procedencia:
+
+```text
+inputs/
+├── externals/
+│   └── archived/
+├── internals/
+│   └── archived/
+└── obtained/
+    └── archived/
+```
+
+La clasificación responde a tres preguntas diferentes:
+
+```text
+externals → ¿qué recibimos?
+internals → ¿qué aportamos o decidimos?
+obtained  → ¿qué descubrimos trabajando?
+```
+
+Los subárboles `archived/` conservan información histórica que ya no participa en el contexto activo.
+
+El archivado no cambia la naturaleza del input.
+
+Un external archivado continúa siendo external. Simplemente deja de intervenir en el cálculo vigente.
+
+## Solo lectura de externals
+
+Desde el punto de vista de IASI:
+
+> **`inputs/externals/` es de solo lectura.**
+
+Cualquier corrección, normalización o interpretación produce un nuevo artefacto fuera de ese directorio.
+
+Esta propiedad permite utilizar los inputs externos como evidencia estable incluso cuando el conocimiento derivado evoluciona.

@@ -1,0 +1,20 @@
+---
+title: "Workflows"
+navbar-title: "Workflows"
+---
+
+La metodología define las responsabilidades y los artefactos.
+
+Un `workflow` define **cómo recorremos esas responsabilidades para alcanzar un objetivo concreto**.
+
+Dos workflows pueden utilizar los mismos inputs, rules, commands y validations en órdenes o combinaciones diferentes sin que la metodología cambie.
+
+```text
+metodología
+   ↓
+workflows
+   ↓
+ejecuciones concretas
+```
+
+Un workflow puede incluir trabajo humano, llamadas a un Sistema Inteligente, herramientas deterministas, validaciones automáticas y decisiones que requieran autoridad profesional.

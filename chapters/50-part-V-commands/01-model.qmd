@@ -1,0 +1,45 @@
+---
+title: "Modelo de command"
+navbar-title: "Modelo"
+---
+
+Un command debe poder describirse sin depender de la interfaz que lo invoque.
+
+Conceptualmente contiene:
+
+```text
+nombre
+intención
+parámetro principal
+parámetros adicionales
+precondiciones
+efectos
+resultado
+transiciones permitidas
+```
+
+## Parámetro principal
+
+Cuando un command posee un parámetro natural, puede declararlo como parámetro principal.
+
+Esto permite utilizar binding posicional o nombrado sin introducir ambigüedad.
+
+## Literales y referencias
+
+IASI distingue conceptualmente entre un literal y una referencia.
+
+Una cadena entre comillas representa un valor literal.
+
+Un identificador sin comillas puede representar una referencia resoluble por el command.
+
+## Selectors
+
+Los selectors permiten aplicar una operación a cero, uno o varios artefactos.
+
+Un selector que no encuentra coincidencias no debe transformarse silenciosamente en otra operación. El resultado puede ser un warning y ninguna modificación.
+
+## Outcome
+
+El outcome describe lo que ocurrió al ejecutar la operación.
+
+No es un argumento que el llamador pueda inventar para imponer el estado final.

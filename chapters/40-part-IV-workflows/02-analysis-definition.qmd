@@ -1,0 +1,30 @@
+---
+title: "De inputs a definitions"
+navbar-title: "Analizar y definir"
+---
+
+Uno de los workflows fundamentales transforma información de entrada en conocimiento utilizable.
+
+```text
+inputs activos
+     ↓
+validar disponibilidad y origen
+     ↓
+detectar contradicciones y huecos
+     ↓
+analizar y relacionar
+     ↓
+proponer definitions
+     ↓
+revisar / aceptar
+```
+
+El objetivo no es resumir todos los documentos.
+
+Es producir definitions que permitan continuar el trabajo sin perder la relación con sus fuentes.
+
+El workflow debe poder terminar también sin crear una definition.
+
+Eso puede ocurrir cuando el input es irrelevante, está superado, contiene información insuficiente o únicamente aporta evidencia histórica.
+
+La ausencia de un artefacto nuevo puede ser un resultado correcto.

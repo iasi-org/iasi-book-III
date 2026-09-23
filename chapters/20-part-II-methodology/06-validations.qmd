@@ -1,0 +1,47 @@
+---
+title: "Validations"
+navbar-title: "Validations"
+---
+
+Una `validation` aporta evidencia sobre una condición que debe cumplirse.
+
+IASI no considera que un artefacto sea correcto porque haya sido generado correctamente desde el punto de vista sintáctico ni porque un agente afirme haber terminado.
+
+El resultado debe poder enfrentarse a criterios explícitos.
+
+Las validations pueden comprobar, entre otras cosas:
+
+- estructura;
+- sintaxis;
+- compilación;
+- pruebas;
+- reglas;
+- consistencia entre artefactos;
+- criterios de aceptación;
+- presencia o ausencia de determinados efectos.
+
+## Validar no es generar
+
+Separar generación y validación reduce un riesgo importante: que el mismo proceso que produjo una decisión se limite a declararla correcta.
+
+No siempre será posible utilizar mecanismos completamente independientes, pero la metodología mantiene conceptualmente ambas responsabilidades.
+
+```text
+ejecución
+   ↓
+resultado
+   ↓
+validation
+   ↓
+evidencia
+```
+
+## Fallar también es un resultado
+
+Una validation fallida no es un accidente que deba ocultarse.
+
+Es información del proceso.
+
+Puede bloquear transiciones posteriores, devolver trabajo a una fase anterior o exigir nueva información.
+
+IASI debe conservar suficiente estado para que el fallo no desaparezca simplemente porque se inicia una nueva conversación o cambia el agente.
